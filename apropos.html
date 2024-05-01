@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link href="css/all.css" rel="stylesheet">
+  <title>À Propos - Mon Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #03224c;
+      color: white;
+    }
+
+    .navbar {
+      background-color: #03224c;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      color: white;
+      font-size: 30px;
+      text-decoration: none;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      padding: 10px 20px;
+    }
+
+    .navbar a:hover {
+      color: gray;
+    }
+
+    @media screen and (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar a {
+        padding: 10px;
+      }
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .profile-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-info img {
+      width: 200px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .name {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .position {
+      font-size: 18px;
+      color: #555;
+    }
+
+    
+  .skills-table {
+    border-collapse: collapse; /* Fusionner les bordures des cellules */
+    width: 100%;
+  }
+  
+  .skills-table th, .skills-table td {
+    border: 1px solid #ddd; /* Ajouter une bordure de 1 pixel solide grise à toutes les cellules */
+    padding: 8px; /* Ajouter un espacement intérieur de 8 pixels aux cellules */
+    text-align: left; /* Aligner le texte à gauche dans les cellules */
+  }
+  
+  .skills-table th {
+    background-color: #f2f2f2; /* Ajouter une couleur de fond gris clair aux cellules d'en-tête */
+  }
+
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <a href="index.html" class="logo">Developer <span class="js">JS.</span></a>
+  <a href="index.html">Accueil</a>
+  <a href="apropos.html">À Propos</a>
+  <a href="service.html">Services</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- Contenu de la page "À Propos" -->
+<div class="container">
+    <div class="profile-info">
+        <img src="img/profil.jpg" alt="Photo de profil">
+        <p>Bienvenue sur mon portfolio ! Je suis RAKOTOVAO Adrian. Ingénieux et passionné par le développement front-end, je suis déterminé à créer des expériences utilisateurs exceptionnelles. Ma mission est d’allier créativité et fonctionnalité pour apporter des solutions visuellement attrayantes et techniquement robustes.</p>
+    </div> <br>
+    <h2>Compétences</h2>
+    <table class="skills-table">
+     
+      <tr>
+        <td>Front-end</td>
+        <td>HTML5, CSS3, JavaScript, React.js, Angular, React-Native, Bootstrap</td>
+      </tr>
+      <tr>
+        <td>Back-end</td>
+        <td>Node.js, Laravel, Spring Boot, Flask, CMS</td>
+      </tr>
+      <tr>
+        <td>Langues</td>
+        <td>Français (parlé et écrit), Anglais (parlé et écrit)</td>
+      </tr>
+    </table><br>
+         
+    <h2>Expérience Professionnelle</h2>
+    <ul class="experience-list">
+      <li>
+        <strong>Développeur front-end / back-end</strong><br>
+        Août 2023 à Février 2024<br>
+        PersonaliTeesh, Antananarivo<br>
+        Conception et intégration de site E-commerce.
+      </li>
+      <li>
+        <strong>Développeur d’Intégration APIs</strong><br>
+        Avril 2022 à Juin 2023<br>
+        Airtel Madagascar, Antananarivo<br>
+        Maîtrise de l'intégration et de la gestion des données via des API.
+      </li>
+    </ul>
+    
+    <h2>Formation</h2>
+    <ul class="education-list">
+        <h3>Diplôme de Licence</h3>
+        <li>
+     Mars 2021 – Décembre 2023<br>
+     Mention : Intégration et Développement<br>
+     Ecole Supérieure des Technologies de l’Information<br>
+     Licence (bac +3)
+         </li>
+    </ul>
+
+</div>
+
+</body>
+</html>

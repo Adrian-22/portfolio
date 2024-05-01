@@ -1,0 +1,187 @@
+#accueil {
+    padding: 50px 0;
+    background-color: #03224c;
+    color: white;
+    text-align: center; /* Centrer le contenu horizontalement */
+  }
+  
+  #accueil h2 {
+    font-size: 2.5em; /* Augmenter la taille de la police */
+    margin-bottom: 30px; /* Augmenter la marge inférieure */
+    animation: fadeInUp 1s ease forwards; /* Animation d'apparition */
+  }
+  
+  #accueil p {
+    font-size: 1.2em;
+    margin-bottom: 20px; /* Augmenter la marge inférieure */
+    line-height: 1.6; /* Espacement entre les lignes */
+    animation: slideInLeft 1s ease forwards; /* Animation de défilement */
+  }
+  
+  #accueil img {
+    max-width: 80%; /* Réduire légèrement la largeur maximale de l'image */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Augmenter l'ombre */
+    margin-top: 20px; /* Ajouter une marge en haut de l'image */
+    margin-bottom: 20px; /* Ajouter une marge en bas de l'image */
+    transition: transform 0.3s ease; /* Ajouter une transition fluide */
+  }
+  
+  #accueil img:hover {
+    transform: translateX(20px); /* Translation de 20 pixels vers la droite au survol */
+  }
+  
+  /* Définition des animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+
+  @keyframes fadeInLetters {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in-letters {
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .fade-in-letters span {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeInLetters 3.5s ease forwards infinite;
+  }
+  
+  .fade-in-letters span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .fade-in-letters span:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  .fade-in-letters span:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  /* Ajoutez plus de règles pour chaque lettre en incrémentant le délai d'animation */
+  
+.name{
+    color: red;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: gray; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transition en douceur lors du survol */
+  }
+
+  .fade-in-text {
+    opacity: 0;
+    animation: fadeInText 2s ease forwards infinite;
+  }
+  
+  .name {
+    color: gray;
+      display: inline-block;
+    opacity: 0;
+    animation: fadeInLetters 5.5s ease forwards infinite;
+  }
+  
+  @keyframes fadeInText {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes highlight {
+    from {
+      color: #fff; /* Couleur normale */
+    }
+    to {
+      color: #03224c; /* Couleur mise en évidence */
+    }
+  }
+  
+
+  .js{
+    color: red;
+  }
+
+  .social-icon {
+    margin-right: 10px; /* Ajoute de la marge à droite de chaque icône */
+    font-size: 1.2em;
+  }
+  .dev{
+    color:red;
+  }
+  
+
+     @keyframes fallIn {
+    /* 0% {
+      transform: translateY(-60px);
+    opacity: 0;
+    }
+     50% {
+       transform: translateY(0);
+       opacity: 1;
+     }
+     100% {
+             transform: translateY(-50px);
+   opacity: 0;
+     } */
+
+     0% {
+        transform: translateX(-60%);
+        opacity: 0;
+     }
+     50% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+   }     
+   .fall-in {
+     animation: fallIn 4s ease-in infinite;
+   }  
+
+  
+   .image-container {
+    border: 2px solid #ffffff; /* Couleur et épaisseur du cadre */
+    border-radius: 10px; /* Arrondi des coins du cadre */
+    overflow: hidden; /* Pour que l'image ne dépasse pas le cadre */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Ombre autour du cadre */
+  }
+  

@@ -1,0 +1,58 @@
+body{
+    background-color: #03224c;
+}
+
+.card{
+    background-color: #03224c;
+    width: 80%;
+    height: 80%;
+}
+
+.card-title{
+    color: white;
+}
+.card-text{
+    color: white;
+}
+.js{
+    color: red;
+  }
+
+.lorem{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    .front{
+        color:red;
+    }
+    .back{
+        color:orange;
+    }
+}
+
+/* Styles pour améliorer la visibilité des cartes */
+.card {
+    border: 1px solid navy; /* Ajoute une bordure de 1 pixel avec une couleur grise */
+    border-radius: 8px; /* Ajoute un arrondi aux coins de la carte */
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+    transition: box-shadow 0.3s ease; /* Animation douce lorsqu'un effet survol est appliqué */
+  }
+  
+  .card:hover {
+    box-shadow: 0 20px 16px rgba(0, 0, 0, 0.2); /* Effet d'ombre plus prononcé au survol */
+    border-color: red;
+  }
+  
+  .card-body {
+    padding: 20px; /* Ajoute un espace intérieur de 20 pixels à la zone de contenu de la carte */
+  }
+  
+  .card-title {
+    font-size: 1.2em; /* Taille de police légèrement augmentée pour le titre */
+    font-weight: bold; /* Rend le titre en gras */
+  }
+  
+  .card-text {
+    color: #555; /* Couleur de texte légèrement grise */
+  }
+  

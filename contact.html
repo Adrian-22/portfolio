@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet"> <!-- Ajout de la balise de fermeture -->
+  <link href="css/all.css" rel="stylesheet">
+  <title>Contact</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #03224c; /* Couleur de fond bleu marine */
+      color: white; /* Couleur du texte */
+    }
+
+    .navbar {
+      background-color: #03224c;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      color: white;
+      font-size: 30px;
+      text-decoration: none;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      padding: 10px 20px;
+    }
+
+    .navbar a:hover {
+      color: gray;
+    }
+
+    .navbar a.active {
+      background-color: #555;
+      color: #fff;
+    }
+
+    @media screen and (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .navbar a {
+        padding: 10px;
+      }
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.1); /* Couleur de fond semi-transparente */
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #ffffff; /* Couleur du titre */
+    }
+
+    p {
+      text-align: center;
+      color: #ffffff; /* Couleur du texte */
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ffffff; /* Couleur de la bordure */
+      border-radius: 5px;
+      box-sizing: border-box;
+      background-color: transparent; /* Fond transparent */
+      color: #ffffff; /* Couleur du texte */
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      background-color: #ffffff; /* Couleur de fond du bouton */
+      color: #03224c; /* Couleur du texte */
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #001a35;
+    }
+
+    .emoji {
+      text-align: center;
+      font-size: 50px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <!-- Logo -->
+  <a href="index.html" class="logo">Developer <span class="js">JS.</span></a>
+  <!-- Liens -->
+  <a href="index.html">Accueil</a>
+  <a href="apropos.html">A propos</a>
+  <a href="service.html">Services</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="contact.html" >Contact</a>
+  <!-- Ajoute d'autres liens selon tes besoins -->
+</div>
+
+<!-- Contenu de la section Contact -->
+<section id="contact">
+  <div class="container">
+    <h2>Contact</h2>
+    <p>N'hésitez pas à me contacter pour discuter de vos projets ou pour toute autre question.</p>
+    <form action="#" method="POST">
+      <label for="firstName">Prénom: Adrian</label>
+
+      <label for="lastName">Nom: RAKOTOVAO</label>
+
+      <label for="facebook">Pseudo Facebook: Adrian Rakotovao</label>
+
+      <label for="linkedin">LinkedIn: www.linkedin.com/in/adrian-rakotovao-121236228 </label>
+
+      <label for="whatsapp">WhatsApp: +261 32 81 719 79</label>
+
+      <label for="email">Email: adrian.rakotovao@esti.mg</label>
+    </form>
+  </div>
+</section>
+
+<!-- Emoticone -->
+<div class="emoji">😊</div>
+
+</body>
+</html>

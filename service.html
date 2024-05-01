@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link href="css/all.css" rel="stylesheet">
+  <link href="css/service.css" rel="stylesheet">
+  <style>
+    /* Styles CSS pour la mise en forme */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #03224c;
+    }
+    section {
+      padding: 40px 20px;
+      background-color: #f9f9f9;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    .project {
+      margin-bottom: 30px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 20px;
+    }
+    .project:last-child {
+      border-bottom: none;
+    }
+    .project h3 {
+      color: #333;
+    }
+    .project p {
+      color: #666;
+    }
+    /* Navbar */
+    .navbar {
+      background-color: #03224c ;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between; /* Pour placer le logo et les liens à chaque extrémité */
+      align-items: center; /* Pour centrer verticalement les éléments */
+      padding: 10px 20px; /* Espacement intérieur pour la navbar */
+    }
+    /* Style du logo */
+    .logo {
+      color: white;
+      font-size: 30px;
+      text-decoration: none;
+    }
+    /* Style des liens de la navbar */
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      padding: 10px 20px;
+    }
+    /* Style des liens de la navbar au survol */
+    .navbar a:hover {
+      color: gray;
+    }
+    /* Style du lien actif */
+    .navbar a.active {
+      background-color: #555;
+      color: #fff;
+    }
+    /* Media query pour rendre la navbar responsive */
+    @media screen and (max-width: 600px) {
+      .navbar {
+        flex-direction: column; /* Pour empiler les éléments verticalement sur petits écrans */
+        align-items: flex-start; /* Pour aligner les éléments à gauche */
+      }
+      .navbar a {
+        padding: 10px; /* Réduire l'espacement entre les liens */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <!-- Logo -->
+  <a href="index.html" class="logo">Developer <span class="js">JS.</span></a>
+  <!-- Liens -->
+  <a href="index.html">Accueil</a>
+  <a href="apropos.html">A propos</a>
+  <a href="service.html">Services</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="#contact">Contact</a>
+  <!-- Ajoute d'autres liens selon tes besoins -->
+</div>
+
+<!-- Contenu de ton portfolio -->
+<section id="portfolio">
+    <div class="container">
+        <h2 class="serv">Mes Services</h2>
+        
+        <!-- Services proposés -->
+        <div class="service">
+          <div class="card">
+            <h3>Développeur Front-End</h3>
+            <p>Description du service : En tant que développeur Front-End, je suis spécialisé dans la création et le développement de l'interface utilisateur des sites web. Je maîtrise les langages de programmation tels que HTML, CSS et JavaScript, ainsi que les frameworks et bibliothèques modernes comme React.js, Angular JS et Vue.js. Mon objectif est de concevoir des interfaces utilisateur attractives, réactives et conviviales pour offrir une expérience utilisateur exceptionnelle.</p>
+            <p><a href="#" onclick="showExamples()">Des sites sur lesquels nous pourrions collaborer ensemble</a></p>
+          </div>
+        </div>
+      
+        <!-- Section pour les mini-cartes (initiallement masquée) -->
+        <div id="miniCards" style="display: none;">
+        
+          <!-- Mini-carte pour le site vitrine -->
+          <div class="mini-card vitrine">
+            <h4 class="vitrine">Site Vitrine</h4>
+            <img src="img/Homepage entreprise de capital investissement.jpg" alt="Site Vitrine">
+            
+          
+          </div> <br><br>
+          <!-- Ajoutez d'autres mini-cartes ici au besoin -->
+          <div class="mini-card">
+            <h4 class="vitrine">E-commerce</h4>
+            <img src="img/website0004 _ Profile _ Fiverr.jpg" alt="Site Vitrine">
+            
+          
+          </div><br><br>
+          <!-- another -->
+          <div class="mini-card">
+            <h4 class="vitrine">BLOG</h4>
+            <img src="img/Sada - A PSD Template For Blog & Shop.jpg" alt="Site Vitrine">
+            
+          
+          </div>
+        </div>
+      </div>
+      
+      <script>
+        function showExamples() {
+          var miniCardsSection = document.getElementById("miniCards");
+          miniCardsSection.style.display = "block";
+        }
+      </script>
+      
+      
+</section>
+
+</body>
+</html>

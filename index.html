@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet"> <!-- Ajout de la balise de fermeture -->
+  <link href="css/all.css" rel="stylesheet">
+  <title>Portfolio</title>
+    <style>
+        body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+  }
+
+  .navbar {
+    background-color: #03224c ;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; /* Pour placer le logo et les liens à chaque extrémité */
+    align-items: center; /* Pour centrer verticalement les éléments */
+    padding: 10px 20px; /* Espacement intérieur pour la navbar */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  }
+
+  /* Style du logo */
+  .logo {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+  /* Style des liens de la navbar */
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+  }
+
+  /* Style des liens de la navbar au survol */
+  .navbar a:hover {
+    /* background-color: #555; */
+    color: gray;
+  }
+
+  /* Style du lien actif */
+  .navbar a.active {
+    background-color: #555;
+    color: #fff;
+  }
+
+    /* Media query pour rendre la navbar responsive */
+    @media screen and (max-width: 600px) {
+    .navbar {
+      flex-direction: column; /* Pour empiler les éléments verticalement sur petits écrans */
+      align-items: flex-start; /* Pour aligner les éléments à gauche */
+    }
+    .navbar a {
+      padding: 10px; /* Réduire l'espacement entre les liens */
+    }
+  }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <!-- Logo -->
+  <a href="index.html" class="logo">Developer <span class="js">JS.</span></a>
+  <!-- Liens -->
+  <a href="index.html">Accueil</a>
+  <a href="apropos.html">A propos</a>
+  <a href="service.html">Services</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="contact.html">Contact</a>
+  <!-- Ajoute d'autres liens selon tes besoins -->
+</div>
+
+<!-- Contenu de ton portfolio -->
+<!-- Contenu de la section "Accueil" -->
+<!-- Contenu de la section "Accueil" avec deux sections distinctes -->
+<section id="accueil">
+    <div class="container">
+      <div class="row">
+        <!-- Première moitié de la section -->
+        <div class="col-md-6">
+          <!-- <h2>Bienvenue sur mon Portfolio</h2> -->
+          <h2 class="fade-in-letters">
+            <span>B</span>
+            <span>i</span>
+            <span>e</span>
+            <span>n</span>
+            <span>v</span>
+            <span>e</span>
+            <span>n</span>
+            <span>u</span>
+            <span>e</span>
+          </h2>
+          
+          <p class="fade-in-text">
+            Je suis <span class="name"><h3>RAKOTOVAO Adrian</h3></span> <h1 class="fall-in">DEVELOPEUR <span class="dev">FULLSTACK JS</span></h1>
+            <br>Mon objectif est de concevoir des applications web et mobiles intuitives, performantes et élégantes qui répondent aux besoins de mes clients.
+          </p>
+          
+          <!-- <p></p>
+          <p>Dans ce portfolio, vous trouverez une sélection de mes projets, mon expérience professionnelle et mes compétences clés.</p>
+          <p>N'hésitez pas à parcourir mes réalisations et à me contacter si vous souhaitez discuter de collaborations ou de nouvelles opportunités passionnantes !</p> -->
+          <a href="portfolio.html" class="btn">Mes compétences</a>
+          <a href="contact.html" class="btn">M'engager</a> <br> <br>
+
+          <a href="https://web.facebook.com/adri.dri.988373/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="www.linkedin.com/in/adrian-rakotovao-121236228" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=VOTRE_NUMÉRO_TÉLÉPHONE" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          
+        </div>
+        <!-- Deuxième moitié de la section -->
+        <div class="col-md-6">
+            <!-- Ajoute ici une image ou une vidéo de présentation -->
+            <div class="image-container">
+              <img src="./img/profil.jpg" alt="Image de présentation" style="width: 100%;">
+            </div>
+          </div>
+          
+      </div>
+    </div>
+  </section>
+  
+  
+
+
+</body>
+</html>
